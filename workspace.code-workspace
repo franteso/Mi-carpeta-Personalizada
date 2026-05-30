@@ -18,6 +18,7 @@
         "editor.formatOnSave": false,
         "files.exclude": {
             "bin": true
-        }
+        },
+        "makefile.configureOnOpen": false
     }
 }

@@ -4,10 +4,7 @@
 #include <iostream>
 #include "Coll.hpp"
 
-using std::string;
-using std::cout;
-using std::cin;
-using std::endl;
+using namespace std;
 
 template<typename T>
 struct Mtx

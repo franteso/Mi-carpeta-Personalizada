@@ -4,10 +4,7 @@
 #define HUFFMANTREE
 
 #include "../tads/parte2/Stack.hpp"
-using std::string;
-using std::cout;
-using std::cin;
-using std::endl;
+using namespace std;
 
 struct HuffmanTable
 {

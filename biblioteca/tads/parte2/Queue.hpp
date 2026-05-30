@@ -4,46 +4,50 @@
 #include <iostream>
 #include "../../funciones/lists.hpp"
 
-using std::string;
-using std::cout;
-using std::cin;
-using std::endl;
+using namespace std;
 
 template<typename T>
 struct Queue
 {
+   Node<T>* p;
+   Node<T>* q;
+   int size;
 };
 
 template<typename T>
 Queue<T> queue()
 {
    Queue<T> q;
+   q.p = NULL;
+   q.q = NULL;
+   q.size=0;
    return q;
 }
 
 template<typename T>
 T* queueEnqueue(Queue<T>& q,T e)
 {
-   return NULL;
+   q.size++;
+   return &(enqueue<T>(q.p,q.q,e)->info);
 }
 
 template<typename T>
 T queueDequeue(Queue<T>& q)
 {
-   T t;
-   return t;
+   q.size--;
+   return dequeue(q.p,q.q);
 }
 
 template<typename T>
 bool queueIsEmpty(Queue<T> q)
 {
-   return true;
+   return isEmpty(q.p);
 }
 
 template<typename T>
 int queueSize(Queue<T> q)
 {
-   return 0;
+   return q.size;
 }
 
 #endif

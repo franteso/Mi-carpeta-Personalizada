@@ -4,7 +4,7 @@
 #include "tads/parte2/List.hpp"
 #include "tads/parte2/Map.hpp"
 #include "funciones/files.hpp"
-#include "main.hpp"
+#include "headerVUELOS.hpp"
 
 using namespace std;
 int main() {

@@ -1,9 +1,6 @@
 #ifndef MAIN_HPP
 #define MAIN_HPP value
 
-
-
-
 struct Ciudad 
 { 
    int idCiu; 
